@@ -9,4 +9,4 @@ services:
 networks:
   default:
     external:
-      name: traefik-alpha_default
+      name: traefik_default
