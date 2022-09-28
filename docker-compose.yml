@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  react-starter:
+    container_name: react-starter
+    build: .
+    labels: 
+      - "traefik.http.routers.react-starter.rule=Host(`react-starter.cccboy.com`)"
+networks:
+  default:
+    external:
+      name: traefik-alpha_default
